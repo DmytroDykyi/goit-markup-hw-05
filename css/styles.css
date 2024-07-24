@@ -635,13 +635,13 @@ body {
   border: none;
 }
 
-.model-close-svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.model-close-button:hover .model-close-svg,
+.model-close-button:focus .model-close-svg {
+  fill: #fff;
 }
 
-.model-close-button .model-close-svg:hover,
-.model-close-button .model-close-svg:focus {
-  fill: #fff;
+.model-close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-text {
@@ -693,8 +693,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-user-input:hover .form-user-svg,
-.form-user-input:focus-within .form-user-svg {
+.form-user-input:hover + .form-user-svg,
+.form-user-input:focus-within + .form-user-svg {
   fill: #4d5ae5;
 }
 
